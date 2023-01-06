@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 18px;
+}
+
+header {
+  background: url(images/bg-hero-desktop.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  width: 20vw;
+  margin: 2rem;
+}
+.navbar button {
+  width: 10vw;
+  padding: 0.5rem;
+  margin: 1rem 2rem;
+  background-color: #fffefe;
+  color: #000000;
+  /* border: 5px solid #e0dede; */
+  border: 5px solid #fffefe;
+
+  border-radius: 1.5rem;
+}
