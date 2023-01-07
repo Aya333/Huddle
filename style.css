@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
+  position: relative;
   font-size: 18px;
 }
-
+/* Header Styling */
 header {
   background: url(images/bg-hero-desktop.svg) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
 }
 
 .navbar {
@@ -19,19 +21,209 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-shrink: inherit;
 }
 .navbar .logo {
-  width: 20vw;
+  width: 16vw;
   margin: 2rem;
 }
 .navbar button {
-  width: 10vw;
+  width: 20vw;
   padding: 0.5rem;
   margin: 1rem 2rem;
   background-color: #fffefe;
   color: #000000;
-  /* border: 5px solid #e0dede; */
   border: 5px solid #fffefe;
-
   border-radius: 1.5rem;
+  box-shadow: -4px 24px 70px -10px rgba(0, 0, 0, 0.75);
+}
+.navbar button:hover {
+  cursor: pointer;
+  border-color: hsl(193, 100%, 96%);
+  background-color: hsl(193, 100%, 96%);
+}
+/* Showcase  styling*/
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 2rem;
+}
+.grid-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+.grid-col-1 h1 {
+  color: hsl(192, 100%, 9%);
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  margin: 1rem 0;
+}
+.grid-col-1 p {
+  color: hsl(192, 100%, 9%);
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin: 1rem 0;
+}
+
+.showcase-btn {
+  width: 20vw;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  border: 5px solid hsl(322, 100%, 66%);
+  border-radius: 1.5rem;
+}
+.showcase-btn:hover {
+  cursor: pointer;
+  border-color: hsla(322, 100%, 66%, 0.7);
+  background-color: hsla(322, 100%, 66%, 0.7);
+}
+.grid-col-2 img {
+  width: 50vw;
+  margin: 3rem;
+}
+/* Cards */
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  border: 1px solid #fff;
+  border-radius: 1.3rem;
+  width: 80vw;
+  height: auto;
+  margin: 4rem auto 1rem;
+}
+.col-1,
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 4rem;
+}
+.col-1 h1 {
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins", sans-serif;
+  margin: 1rem 0;
+}
+.col-1 p {
+  color: rgb(128, 141, 153);
+  font-family: "Open Sans", sans-serif;
+}
+.col-2 img {
+  width: 30vw;
+  height: 50vh;
+}
+.card-3 {
+  margin-bottom: 10rem;
+}
+.extra-card {
+  width: 40vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 1.2rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  left: 30%;
+  top: 80%;
+}
+.extra-card h1 {
+  color: hsl(192, 100%, 9%);
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+/* Footer styling */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: hsl(192, 100%, 9%);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.part-1,
+.part-2,
+.part-3 {
+  /* width: 30vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2rem 3rem;
+  padding: 3rem 0;
+  font-size: 1rem;
+}
+.part-1 span {
+  margin: 0.5rem;
+}
+
+.part-1 p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  margin: 0.75rem;
+}
+
+.part-2,
+.part-3 {
+  justify-content: center;
+  align-items: center;
+}
+
+.part-2 a,
+.part-3 a {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  line-height: 2;
+}
+
+.part-2 a:hover,
+.part-3 a:hover {
+  text-decoration: underline;
+}
+
+.part-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.part-4 h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+}
+
+.attribution,
+.attribution > a {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.part-4 h1:hover,
+.attribution > a:hover {
+  color: hsl(322, 100%, 66%);
 }
